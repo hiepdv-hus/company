@@ -1,0 +1,881 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/hp-logo4.png" />
+  <!--Bootstrap css-->
+  <link rel="stylesheet" href="assets/css/bootstrap.css" />
+  <!--Font Awesome css-->
+  <link rel="stylesheet" href="assets/css/font-awesome.min.css" />
+  <!--Slicknav css-->
+  <link rel="stylesheet" href="assets/css/slicknav.min.css" />
+  <!--Swiper css-->
+  <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+  <!--style css-->
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/style-new.css" />
+</head>
+
+<body>
+  <header class="jobguru-header-area stick-top forsticky header-fixed-top">
+    <div class="menu-animation">
+      <div id="body-background" style="height: 0px"></div>
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-3 menuRight">
+            <div class="site-logo">
+              <a href="https://beta.resumegates.com">
+                <img src="https://beta.resumegates.com/assets/client/img/logo.png" alt="jobguru"
+                  class="non-stick-logo" />
+                <img src="https://beta.resumegates.com/assets/client/img/logo.png" alt="jobguru" class="stick-logo" />
+              </a>
+            </div>
+            <div>
+              <span onclick="openNav()" class="navIcon">
+                <i class="fa fa-bars pt-1" aria-hidden="true"></i>
+              </span>
+            </div>
+          </div>
+          <div class="col-lg-9">
+            <nav class="header-menu sidenav" id="mySidenav" style="width: 100%">
+              <a href="javascript:void(0)" class="closebtn navIcon" onclick="closeNav()">×</a>
+              <nav id="navigation">
+                <ul id="jobguru_navigation">
+                  <div class="row align-items-center">
+                    <div class="col-lg-7">
+                      <ul>
+                        <li class="active has-children">
+                          <a class="" href="https://beta.resumegates.com/cvs/list">My Resume</a>
+                        </li>
+                        <li class="has-children">
+                          <a class="" href="https://beta.resumegates.com/templates">Templates</a>
+                        </li>
+                        <li class="has-children">
+                          <a class="" href="https://beta.resumegates.com/company">Company</a>
+                        </li>
+                        <li class="has-children">
+                          <a class="" href="https://beta.resumegates.com/blogs">Blog</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="col-lg-5">
+                      <div class="header-right-menu">
+                        <ul>
+                          <li class="has-children">
+                            <a href="https://beta.resumegates.com/login" class="signIn-btn">Sign In</a>
+                          </li>
+                          <li class="has-children">
+                            <a href="https://beta.resumegates.com/register" class="signUp-btn">Sign Up</a>
+                          </li>
+                          <li class="has-children">
+                            <button class="swiper-button-empty" data-bs-toggle="dropdown" type="button"
+                              id="dropdownMenuButton" aria-haspopup="true" aria-expanded="true">
+                              <img src="https://flagcdn.com/w20/gb.png" srcset="https://flagcdn.com/w20/gb.png 2x"
+                                width="20" alt="en" />
+                            </button>
+                            <div class="dropdown-menu dropdown-style" aria-labelledby="dropdownMenuButton">
+                              <a class="dropdown-item" href="https://beta.resumegates.com/locale/vi"><img
+                                  src="https://flagcdn.com/w20/vn.png" srcset="https://flagcdn.com/w40/vn.png 2x"
+                                  width="20" alt="Vietnam" />
+                                Tiếng Việt</a>
+                              <a class="dropdown-item" href="https://beta.resumegates.com/locale/en"><img
+                                  src="https://flagcdn.com/w20/gb.png" srcset="https://flagcdn.com/w40/gb.png 2x"
+                                  width="20" alt="United Kingdom" />
+                                English</a>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </ul>
+              </nav>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main class="company filter-search">
+    <div class="container">
+      <div class="background-box-shadow">
+        <div class="row">
+          <div class="company__header__search">
+            <div class="company__header__search-flex">
+              <div class="company__header__search__type">
+                <div class="company__header__search-input mt-3">
+                  <embed class="icon" src="./company-icon-search.svg" />
+                  <input class="input" placeholder="Search for a company or region..." />
+                </div>
+                <div class="search-select-list d-flex mt-3" style="width: 90%">
+                  <div class="dropdown" id="dropdown1">
+                    <div class="direction-down">
+                      <div class="down-options">
+                        <embed src="./direction-down.svg" />
+                      </div>
+                      <div class="clear-options">
+                        <i class="fa fa-times-circle-o" aria-hidden="true"></i>
+                      </div>
+                    </div>
+                    <div class="selected-option">All templates</div>
+                    <div class="options">
+                      <input type="text" class="search-select" placeholder="Search options..." />
+                      <div class="options-item" data-value="Administration 1" data-bs-toggle="tooltip" data-bs-placement="top"
+                        title="Administration 1">
+                        <span>Administration 1</span>
+                      </div>
+                      <div class="options-item" data-value="Administration 2" data-bs-toggle="tooltip" data-bs-placement="top"
+                        title="Administration 2">
+                        <span>Administration 2</span>
+                      </div>
+                      <div class="options-item" data-value="Administration 3" data-bs-toggle="tooltip" data-bs-placement="top"
+                        title="Administration 3">
+                        <span>Administration 3</span>
+                      </div>
+                      <div class="options-item" data-value="Administration 4" data-bs-toggle="tooltip" data-bs-placement="top"
+                        title="Administration 4">
+                        <span>Administration 4</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="dropdown" id="dropdown2">
+                    <div class="direction-down">
+                      <div class="down-options">
+                        <embed src="./direction-down.svg" />
+                      </div>
+                      <div class="clear-options">
+                        <i class="fa fa-times-circle-o" aria-hidden="true"></i>
+                      </div>
+                    </div>
+                    <div class="selected-option">Job type</div>
+                    <div class="options">
+                      <input type="text" class="search-select" placeholder="Search options..." />
+                      <div class="options-item" data-value="Administration 1" data-bs-toggle="tooltip" data-bs-placement="top"
+                        title="Administration 1">
+                        <span>Administration 1</span>
+                      </div>
+                      <div class="options-item" data-value="Administration 2" data-bs-toggle="tooltip" data-bs-placement="top"
+                        title="Administration 2">
+                        <span>Administration 2</span>
+                      </div>
+                      <div class="options-item" data-value="Administration 3" data-bs-toggle="tooltip" data-bs-placement="top"
+                        title="Administration 3">
+                        <span>Administration 3</span>
+                      </div>
+                      <div class="options-item" data-value="Administration 4" data-bs-toggle="tooltip" data-bs-placement="top"
+                        title="Administration 4">
+                        <span>Administration 4</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="dropdown" id="dropdown3">
+                    <div class="direction-down">
+                      <div class="down-options">
+                        <embed src="./direction-down.svg" />
+                      </div>
+                      <div class="clear-options">
+                        <i class="fa fa-times-circle-o" aria-hidden="true"></i>
+                      </div>
+                    </div>
+                    <div class="selected-option">Country</div>
+                    <div class="options">
+                      <input type="text" class="search-select" placeholder="Search options..." />
+                      <div class="options-item" data-value="Administration/Managerment" data-bs-toggle="tooltip"
+                        data-bs-placement="top" title="Administration/Managerment">
+                        <span>Administration/Managerment</span>
+                      </div>
+                      <div class="options-item" data-value="Associate Professor/Professor" data-bs-toggle="tooltip"
+                        data-bs-placement="top" title="Associate Professor/Professor">
+                        <span>Associate Professor/Professor</span>
+                        
+                      </div>
+                      <div class="options-item" data-value="Architecture and Design" data-bs-toggle="tooltip"
+                        data-bs-placement="top" title="Architecture and Design">
+                        <span>Architecture and Design</span>
+                        
+                      </div>
+                      <div class="options-item" data-value="Arts and Culture" data-bs-toggle="tooltip"
+                        data-bs-placement="top" title="Arts and Culture">
+                        <span>Arts and Culture</span>
+                        
+                      </div>
+                      <div class="options-item" data-value="Arts and Culture" data-bs-toggle="tooltip"
+                        data-bs-placement="top" title="Arts and Culture">
+                        <span>Arts and Culture</span>
+                      </div>
+                      <div class="options-item" data-value="Arts and Culture" data-bs-toggle="tooltip"
+                        data-bs-placement="top" title="Arts and Culture">
+                        <span>Arts and Culture</span>
+                      </div>
+                      <div class="options-item" data-value="Arts and Culture" data-bs-toggle="tooltip"
+                        data-bs-placement="top" title="Arts and Culture">
+                        <span>Arts and Culture</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="company__header__search-button d-flex mt-3">
+                <button class="button-outline me-2">
+                  <embed class="icon me-1" src="./company-reset.svg" />
+                  <span>Reset</span>
+                </button>
+                <button class="button">
+                  <embed class="icon me-1" src="./company-icon-search-1.svg" />
+                  <span>Search</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-3">
+          <div class="col-lg-3 col-md-3 position-relative d-none d-md-block">
+            <div class="company-banner-fixed">
+              <div class="company-banner banner-advertising">
+                <p class="company-banner__title">
+                  Banner<br />
+                  Advertising
+                </p>
+                <img class="company-banner__img" src="./company-advertising.svg" width="100%" />
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-9 col-md-9">
+            <div class="company__header">
+              <div class="company__header__sort">
+                <div class="d-flex justify-content-between company__header__sort-flex">
+                  <div>
+                    <p>
+                      <b> Results (337 of 337) </b>
+                    </p>
+                  </div>
+                  <div class="d-flex right">
+                    <p>
+                      <embed src="./company-icon-sort.svg" />
+                      <b>Sort:</b>
+                    </p>
+                    <div class="ms-3">
+                       <input type="radio" name="fav_language" value="Relevance" />
+                      <span>Relevance</span>
+                    </div>
+                    <div class="ms-3">
+                       <input type="radio" name="fav_language" value="AZ" />
+                      <span>A-Z</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="company__content">
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="shadow-search">
+                    <div class="pt-7">
+                      <div class="job-item">
+                        <div class="job-item__title d-flex align-items-center">
+                          <div class="job-company-logo me-2">
+                            <img loading="lazy" class="w-100" alt="United States" src="./window.svg" />
+                          </div>
+                          <div class="ms-1">
+                            <a href="" target="_bank" class="text-decoration-off filter-search-title">
+                              Shift Technology
+                            </a>
+                            <div class="text-muted">
+                              <div class="d-flex">
+                                <p class="company-job-time">
+                                  <embed class="me-1" src="./company-location-address.svg" />
+                                  <span>United States</span>
+                                </p>
+                                <p class="company-job-time">
+                                  <embed class="me-1" src="./company-time-clock.svg" />
+                                  <span>Closing in 27 days</span>
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="ms-auto">
+                            <a class="text-decoration-off p-2">
+                              <i class="fa fa-heart-o icon-heart-o"></i>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="job-item__content pt-0">
+                          <a class="" href="" target="_bank">
+                            <h4 class="mb-2">
+                              Intern Data Scientist / Software Engineer -
+                              Spanish Speaking (End-of-studies)
+                            </h4>
+                            <p class="job-short cut-text--6-line">
+                              Did you know that about 10% of all insurance
+                              payouts are flowing directly into the pockets of
+                              fraudsters? The future of insurance starts with
+                              Decisions Made Better. Shift Technology
+                              harnesses the power of AI to enable the world's
+                              leading insurance organizations to make better
+                              decisions. Our products...
+                            </p>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="shadow-search">
+                    <div class="pt-7">
+                      <div class="job-item">
+                        <div class="job-item__title d-flex align-items-center">
+                          <div class="job-company-logo me-2">
+                            <div>AD</div>
+                          </div>
+                          <div class="ms-1">
+                            <a href="" target="_bank" class="text-decoration-off filter-search-title">
+                              Shift Technology
+                            </a>
+                            <div class="text-muted">
+                              <div class="d-flex">
+                                <p class="company-job-time">
+                                  <embed class="me-1" src="./company-location-address.svg" />
+                                  <span>United States</span>
+                                </p>
+                                <p class="company-job-time">
+                                  <embed class="me-1" src="./company-time-clock.svg" />
+                                  <span>Closing in 27 days</span>
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="ms-auto">
+                            <a class="text-decoration-off p-2">
+                              <i class="fa fa-heart-o icon-heart-o"></i>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="job-item__content pt-0">
+                          <a class="" href="" target="_bank">
+                            <h4 class="mb-2">
+                              Intern Data Scientist / Software Engineer -
+                              Spanish Speaking (End-of-studies)
+                            </h4>
+                            <p class="job-short cut-text--6-line">
+                              Did you know that about 10% of all insurance
+                              payouts are flowing directly into the pockets of
+                              fraudsters? The future of insurance starts with
+                              Decisions Made Better. Shift Technology
+                              harnesses the power of AI to enable the world's
+                              leading insurance organizations to make better
+                              decisions. Our products...
+                            </p>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="shadow-search">
+                    <div class="pt-7">
+                      <div class="job-item">
+                        <div class="job-item__title d-flex align-items-center">
+                          <div class="job-company-logo me-2">
+                            <img loading="lazy" class="w-100" alt="United States" src="./window.svg" />
+                          </div>
+                          <div class="ms-1">
+                            <a href="" target="_bank" class="text-decoration-off filter-search-title">
+                              Shift Technology
+                            </a>
+                            <div class="text-muted">
+                              <div class="d-flex">
+                                <p class="company-job-time">
+                                  <embed class="me-1" src="./company-location-address.svg" />
+                                  <span>United States</span>
+                                </p>
+                                <p class="company-job-time">
+                                  <embed class="me-1" src="./company-time-clock.svg" />
+                                  <span>Closing in 27 days</span>
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="ms-auto">
+                            <a class="text-decoration-off p-2">
+                              <i class="fa fa-heart-o icon-heart-o"></i>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="job-item__content pt-0">
+                          <a class="" href="" target="_bank">
+                            <h4 class="mb-2">
+                              Intern Data Scientist / Software Engineer -
+                              Spanish Speaking (End-of-studies)
+                            </h4>
+                            <p class="job-short cut-text--6-line">
+                              Did you know that about 10% of all insurance
+                              payouts are flowing directly into the pockets of
+                              fraudsters? The future of insurance starts with
+                              Decisions Made Better. Shift Technology
+                              harnesses the power of AI to enable the world's
+                              leading insurance organizations to make better
+                              decisions. Our products...
+                            </p>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="shadow-search">
+                    <div class="pt-7">
+                      <div class="job-item">
+                        <div class="job-item__title d-flex align-items-center">
+                          <div class="job-company-logo me-2">
+                            <img loading="lazy" class="w-100" alt="United States" src="./window.svg" />
+                          </div>
+                          <div class="ms-1">
+                            <a href="" target="_bank" class="text-decoration-off filter-search-title">
+                              Shift Technology
+                            </a>
+                            <div class="text-muted">
+                              <div class="d-flex">
+                                <p class="company-job-time">
+                                  <embed class="me-1" src="./company-location-address.svg" />
+                                  <span>United States</span>
+                                </p>
+                                <p class="company-job-time">
+                                  <embed class="me-1" src="./company-time-clock.svg" />
+                                  <span>Closing in 27 days</span>
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="ms-auto">
+                            <a class="text-decoration-off p-2">
+                              <i class="fa fa-heart-o icon-heart-o"></i>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="job-item__content pt-0">
+                          <a class="" href="" target="_bank">
+                            <h4 class="mb-2">
+                              Intern Data Scientist / Software Engineer -
+                              Spanish Speaking (End-of-studies)
+                            </h4>
+                            <p class="job-short cut-text--6-line">
+                              Did you know that about 10% of all insurance
+                              payouts are flowing directly into the pockets of
+                              fraudsters? The future of insurance starts with
+                              Decisions Made Better. Shift Technology
+                              harnesses the power of AI to enable the world's
+                              leading insurance organizations to make better
+                              decisions. Our products...
+                            </p>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="shadow-search">
+                    <div class="pt-7">
+                      <div class="job-item">
+                        <div class="job-item__title d-flex align-items-center">
+                          <div class="job-company-logo me-2">
+                            <img loading="lazy" class="w-100" alt="United States" src="./window.svg" />
+                          </div>
+                          <div class="ms-1">
+                            <a href="" target="_bank" class="text-decoration-off filter-search-title">
+                              Shift Technology
+                            </a>
+                            <div class="text-muted">
+                              <div class="d-flex">
+                                <p class="company-job-time">
+                                  <embed class="me-1" src="./company-location-address.svg" />
+                                  <span>United States</span>
+                                </p>
+                                <p class="company-job-time">
+                                  <embed class="me-1" src="./company-time-clock.svg" />
+                                  <span>Closing in 27 days</span>
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="ms-auto">
+                            <a class="text-decoration-off p-2">
+                              <i class="fa fa-heart-o icon-heart-o"></i>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="job-item__content pt-0">
+                          <a class="" href="" target="_bank">
+                            <h4 class="mb-2">
+                              Intern Data Scientist / Software Engineer -
+                              Spanish Speaking (End-of-studies)
+                            </h4>
+                            <p class="job-short cut-text--6-line">
+                              Did you know that about 10% of all insurance
+                              payouts are flowing directly into the pockets of
+                              fraudsters? The future of insurance starts with
+                              Decisions Made Better. Shift Technology
+                              harnesses the power of AI to enable the world's
+                              leading insurance organizations to make better
+                              decisions. Our products...
+                            </p>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="shadow-search">
+                    <div class="pt-7">
+                      <div class="job-item">
+                        <div class="job-item__title d-flex align-items-center">
+                          <div class="job-company-logo me-2">
+                            <img loading="lazy" class="w-100" alt="United States" src="./window.svg" />
+                          </div>
+                          <div class="ms-1">
+                            <a href="" target="_bank" class="text-decoration-off filter-search-title">
+                              Shift Technology
+                            </a>
+                            <div class="text-muted">
+                              <div class="d-flex">
+                                <p class="company-job-time">
+                                  <embed class="me-1" src="./company-location-address.svg" />
+                                  <span>United States</span>
+                                </p>
+                                <p class="company-job-time">
+                                  <embed class="me-1" src="./company-time-clock.svg" />
+                                  <span>Closing in 27 days</span>
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="ms-auto">
+                            <a class="text-decoration-off p-2">
+                              <i class="fa fa-heart-o icon-heart-o"></i>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="job-item__content pt-0">
+                          <a class="" href="" target="_bank">
+                            <h4 class="mb-2">
+                              Intern Data Scientist / Software Engineer -
+                              Spanish Speaking (End-of-studies)
+                            </h4>
+                            <p class="job-short cut-text--6-line">
+                              Did you know that about 10% of all insurance
+                              payouts are flowing directly into the pockets of
+                              fraudsters? The future of insurance starts with
+                              Decisions Made Better. Shift Technology
+                              harnesses the power of AI to enable the world's
+                              leading insurance organizations to make better
+                              decisions. Our products...
+                            </p>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="shadow-search">
+                    <div class="pt-7">
+                      <div class="job-item">
+                        <div class="job-item__title d-flex align-items-center">
+                          <div class="job-company-logo me-2">
+                            <img loading="lazy" class="w-100" alt="United States" src="./window.svg" />
+                          </div>
+                          <div class="ms-1">
+                            <a href="" target="_bank" class="text-decoration-off filter-search-title">
+                              Shift Technology
+                            </a>
+                            <div class="text-muted">
+                              <div class="d-flex">
+                                <p class="company-job-time">
+                                  <embed class="me-1" src="./company-location-address.svg" />
+                                  <span>United States</span>
+                                </p>
+                                <p class="company-job-time">
+                                  <embed class="me-1" src="./company-time-clock.svg" />
+                                  <span>Closing in 27 days</span>
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="ms-auto">
+                            <a class="text-decoration-off p-2">
+                              <i class="fa fa-heart-o icon-heart-o"></i>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="job-item__content pt-0">
+                          <a class="" href="" target="_bank">
+                            <h4 class="mb-2">
+                              Intern Data Scientist / Software Engineer -
+                              Spanish Speaking (End-of-studies)
+                            </h4>
+                            <p class="job-short cut-text--6-line">
+                              Did you know that about 10% of all insurance
+                              payouts are flowing directly into the pockets of
+                              fraudsters? The future of insurance starts with
+                              Decisions Made Better. Shift Technology
+                              harnesses the power of AI to enable the world's
+                              leading insurance organizations to make better
+                              decisions. Our products...
+                            </p>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="shadow-search">
+                    <div class="pt-7">
+                      <div class="job-item">
+                        <div class="job-item__title d-flex align-items-center">
+                          <div class="job-company-logo me-2">
+                            <img loading="lazy" class="w-100" alt="United States" src="./window.svg" />
+                          </div>
+                          <div class="ms-1">
+                            <a href="" target="_bank" class="text-decoration-off filter-search-title">
+                              Shift Technology
+                            </a>
+                            <div class="text-muted">
+                              <div class="d-flex">
+                                <p class="company-job-time">
+                                  <embed class="me-1" src="./company-location-address.svg" />
+                                  <span>United States</span>
+                                </p>
+                                <p class="company-job-time">
+                                  <embed class="me-1" src="./company-time-clock.svg" />
+                                  <span>Closing in 27 days</span>
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="ms-auto">
+                            <a class="text-decoration-off p-2">
+                              <i class="fa fa-heart-o icon-heart-o"></i>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="job-item__content pt-0">
+                          <a class="" href="" target="_bank">
+                            <h4 class="mb-2">
+                              Intern Data Scientist / Software Engineer -
+                              Spanish Speaking (End-of-studies)
+                            </h4>
+                            <p class="job-short cut-text--6-line">
+                              Did you know that about 10% of all insurance
+                              payouts are flowing directly into the pockets of
+                              fraudsters? The future of insurance starts with
+                              Decisions Made Better. Shift Technology
+                              harnesses the power of AI to enable the world's
+                              leading insurance organizations to make better
+                              decisions. Our products...
+                            </p>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="shadow-search">
+                    <div class="pt-7">
+                      <div class="job-item">
+                        <div class="job-item__title d-flex align-items-center">
+                          <div class="job-company-logo me-2">
+                            <img loading="lazy" class="w-100" alt="United States" src="./window.svg" />
+                          </div>
+                          <div class="ms-1">
+                            <a href="" target="_bank" class="text-decoration-off filter-search-title">
+                              Shift Technology
+                            </a>
+                            <div class="text-muted">
+                              <div class="d-flex">
+                                <p class="company-job-time">
+                                  <embed class="me-1" src="./company-location-address.svg" />
+                                  <span>United States</span>
+                                </p>
+                                <p class="company-job-time">
+                                  <embed class="me-1" src="./company-time-clock.svg" />
+                                  <span>Closing in 27 days</span>
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="ms-auto">
+                            <a class="text-decoration-off p-2">
+                              <i class="fa fa-heart-o icon-heart-o"></i>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="job-item__content pt-0">
+                          <a class="" href="" target="_bank">
+                            <h4 class="mb-2">
+                              Intern Data Scientist / Software Engineer -
+                              Spanish Speaking (End-of-studies)
+                            </h4>
+                            <p class="job-short cut-text--6-line">
+                              Did you know that about 10% of all insurance
+                              payouts are flowing directly into the pockets of
+                              fraudsters? The future of insurance starts with
+                              Decisions Made Better. Shift Technology
+                              harnesses the power of AI to enable the world's
+                              leading insurance organizations to make better
+                              decisions. Our products...
+                            </p>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="text-center">
+              <nav aria-label="Page navigation example">
+                <ul class="pagination">
+                  <li class="disabled">
+                    <a><i class="fa fa-angle-left" aria-hidden="true"></i></a>
+                  </li>
+                  <li class="active"><a class="active">1</a></li>
+                  <li><a href="">2</a></li>
+                  <li>
+                    <a href="" rel="next"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="jobguru-footer-area mt-5">
+    <div class="footer-top section_50">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-5 col-md-6">
+            <div class="single-footer-widget">
+              <div class="footer-logo mb-2">
+                <a href="">
+                  <img src="https://beta.resumegates.com/assets/client/img/logo_2-1.png" />
+                </a>
+              </div>
+              <ul>
+                <li class="m-0 mb-1 mt-3">
+                  <a class="text-gray" href="">
+                    <i class="fa fa-envelope me-2"></i>contact@brightergates.com</a>
+                </li>
+                <li class="m-0 mb-1">
+                  <span class="text-gray">
+                    <i class="fa fa-copyright me-2"></i>This website is a
+                    product by Brighter Gates AB</span>
+                </li>
+                <li class="m-0 mb-1">
+                  <span class="text-gray">
+                    <i class="fa fa-map-marker me-2"></i>Portlidervagen 2, 724
+                    80, Vasteras, Sweden</span>
+                </li>
+              </ul>
+              <ul class="footer-social">
+                <li>
+                  <a href="https://www.facebook.com/profile.php?id=100088828484452" class="fb me-1">
+                    <img src="https://beta.resumegates.com/assets/client/img/Facebook.png" />
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.linkedin.com/company/resume-gates/" class="linkedin">
+                    <img src="https://beta.resumegates.com/assets/client/img/linkedin.png" />
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-7 col-md-6">
+            <div class="row">
+              <div class="col-lg-4 col-md-6">
+                <div class="single-footer-widget">
+                  <h3>Job Seeker</h3>
+                  <ul>
+                    <li>
+                      <a href="https://beta.resumegates.com/blogs">Blog</a>
+                    </li>
+                    <li>
+                      <a href="https://beta.resumegates.com/templates">
+                        Templates</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <div class="single-footer-widget">
+                  <h3>Employer</h3>
+                  <ul>
+                    <li>
+                      <a href="https://beta.resumegates.com/contact-us">Post a job</a>
+                    </li>
+                    <li>
+                      <a href="https://beta.resumegates.com/content-marketing">Content Marketing</a>
+                    </li>
+                    <li>
+                      <a href="https://beta.resumegates.com/contact-us">Price</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <div class="single-footer-widget">
+                  <h3>Info</h3>
+                  <ul>
+                    <li>
+                      <a href="https://beta.resumegates.com/about-us">About us</a>
+                    </li>
+                    <li>
+                      <a href="https://beta.resumegates.com/terms-conditions">Terms &amp; Conditions</a>
+                    </li>
+                    <li>
+                      <a href="https://beta.resumegates.com/terms-conditions">Privacy Policy</a>
+                    </li>
+                    <li>
+                      <a href="https://beta.resumegates.com/contact-us">Contact us</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="copyright-left">
+              <p>
+                This website is a product by Brighter Gates AB, Portlidervagen
+                2, 724 80, Vasteras, Sweden.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="./assets/js/jquery-3.0.0.min.js"></script>
+  <script src="./assets/js/search.js"></script>
+</body>
+
+</html>

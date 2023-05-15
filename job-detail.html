@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/img/hp-logo4.png"
+    />
+    <!--Bootstrap css-->
+    <link rel="stylesheet" href="assets/css/bootstrap.css" />
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <!--Font Awesome css-->
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css" />
+    <!--Slicknav css-->
+    <link rel="stylesheet" href="assets/css/slicknav.min.css" />
+    <!--Swiper css-->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+    <!--style css-->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/style-new.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+  </head>
+
+  <body>
+    <header class="jobguru-header-area stick-top forsticky header-fixed-top">
+      <div class="menu-animation">
+        <div id="body-background" style="height: 0px"></div>
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-3 menuRight">
+              <div class="site-logo">
+                <a href="https://beta.resumegates.com">
+                  <img
+                    src="https://beta.resumegates.com/assets/client/img/logo.png"
+                    alt="jobguru"
+                    class="non-stick-logo"
+                  />
+                  <img
+                    src="https://beta.resumegates.com/assets/client/img/logo.png"
+                    alt="jobguru"
+                    class="stick-logo"
+                  />
+                </a>
+              </div>
+              <div>
+                <span onclick="openNav()" class="navIcon">
+                  <i class="fa fa-bars pt-1" aria-hidden="true"></i>
+                </span>
+              </div>
+            </div>
+            <div class="col-lg-9">
+              <nav
+                class="header-menu sidenav"
+                id="mySidenav"
+                style="width: 100%"
+              >
+                <a
+                  href="javascript:void(0)"
+                  class="closebtn navIcon"
+                  onclick="closeNav()"
+                  >×</a
+                >
+                <nav id="navigation">
+                  <ul id="jobguru_navigation">
+                    <div class="row align-items-center">
+                      <div class="col-lg-7">
+                        <ul>
+                          <li class="active has-children">
+                            <a
+                              class=""
+                              href="https://beta.resumegates.com/cvs/list"
+                              >My Resume</a
+                            >
+                          </li>
+                          <li class="has-children">
+                            <a
+                              class=""
+                              href="https://beta.resumegates.com/templates"
+                              >Templates</a
+                            >
+                          </li>
+                          <li class="has-children">
+                            <a
+                              class=""
+                              href="https://beta.resumegates.com/company"
+                              >Company</a
+                            >
+                          </li>
+                          <li class="has-children">
+                            <a
+                              class=""
+                              href="https://beta.resumegates.com/blogs"
+                              >Blog</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="col-lg-5">
+                        <div class="header-right-menu">
+                          <ul>
+                            <li class="has-children">
+                              <a
+                                href="https://beta.resumegates.com/login"
+                                class="signIn-btn"
+                                >Sign In</a
+                              >
+                            </li>
+                            <li class="has-children">
+                              <a
+                                href="https://beta.resumegates.com/register"
+                                class="signUp-btn"
+                                >Sign Up</a
+                              >
+                            </li>
+                            <li class="has-children">
+                              <button
+                                class="swiper-button-empty"
+                                data-bs-toggle="dropdown"
+                                type="button"
+                                id="dropdownMenuButton"
+                                aria-haspopup="true"
+                                aria-expanded="true"
+                              >
+                                <img
+                                  src="https://flagcdn.com/w20/gb.png"
+                                  srcset="https://flagcdn.com/w20/gb.png 2x"
+                                  width="20"
+                                  alt="en"
+                                />
+                              </button>
+                              <div
+                                class="dropdown-menu dropdown-style"
+                                aria-labelledby="dropdownMenuButton"
+                              >
+                                <a
+                                  class="dropdown-item"
+                                  href="https://beta.resumegates.com/locale/vi"
+                                  ><img
+                                    src="https://flagcdn.com/w20/vn.png"
+                                    srcset="https://flagcdn.com/w40/vn.png 2x"
+                                    width="20"
+                                    alt="Vietnam"
+                                  />
+                                  Tiếng Việt</a
+                                >
+                                <a
+                                  class="dropdown-item"
+                                  href="https://beta.resumegates.com/locale/en"
+                                  ><img
+                                    src="https://flagcdn.com/w20/gb.png"
+                                    srcset="https://flagcdn.com/w40/gb.png 2x"
+                                    width="20"
+                                    alt="United Kingdom"
+                                  />
+                                  English</a
+                                >
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </ul>
+                </nav>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="company job-detail">
+      <div class="container">
+        <div class="row">
+          <!-- <div class="col-lg-1 col-md-12"></div> -->
+          <div class="col-lg-8 col-md-8">
+            <div class="background-box-shadow">
+              <div class="company__title">
+                <div class="company__info">
+                  <div class="avatar">
+                    <img src="./lg-uni.png" />
+                    <!-- <div>OK</div> -->
+                  </div>
+                  <div class="company__info-right">
+                    <p>Suny Science Institute</p>
+                    <h3>New Call for GSSI PhD Applications 2023/24 now open</h3>
+                    <div class="text-muted">
+                      <div class="d-flex suny-block">
+                        <p class="company-job-time">
+                          <embed
+                            class="me-1"
+                            src="./company-location-address.svg"
+                          />
+                          <span>United States</span>
+                        </p>
+                        <p class="company-job-time">
+                          <embed class="me-1" src="./company-time-clock.svg" />
+                          <span>Closing in 27 days</span>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="link-apply mt-4">
+                <div class="row">
+                  <div class="col-lg-3 col-md-6 d-flex mb-3">
+                    <a class="button-apply"> Apply now </a>
+                  </div>
+                  <div class="col-lg-3 col-md-6 d-flex mb-3">
+                    <a class="button-o-apply">
+                      <embed class="me-1" src="./job-heart.svg" />
+                      Save as a favourite
+                    </a>
+                  </div>
+                  <div class="col-lg-3 col-md-6 d-flex mb-3">
+                    <a class="button-o-apply">
+                      <embed class="me-1" src="./job-notification.svg" />
+                      Create job alert
+                    </a>
+                  </div>
+                  <div class="col-lg-3 col-md-6 d-flex mb-3">
+                    <a class="button-o-apply">
+                      <embed class="me-1" src="./job-share.svg" />
+                      Share this job
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="company__content">
+                <div class="company__content__item mt-3">
+                  <div
+                    class="company__content__text collapse multi-collapse"
+                    id="multiCollapseExample1"
+                  >
+                    <p class="mt-2">
+                      Founded in 1868, the University of California, Berkeley is
+                      one of the world’s preeminent public universities,
+                      boasting a distinguished faculty (with 22 Nobel laureates
+                      to date), stellar research libraries, and more than 350
+                      academic programs. At the heart of Berkeley’s excellence
+                      are its 1,582 full-time faculty members, dispersed among
+                      130 academic units and 80 interdisciplinary research
+                      units.<br /><br />
+
+                      Berkeley is home to more than 25,000 undergraduates and
+                      more than 10,000 graduate students — and produces more
+                      PhDs annually than any other American university. It ranks
+                      at or near the top in fields ranging from engineering and
+                      the core sciences to the social sciences, arts, and
+                      humanities. In 2010, the National Research Council awarded
+                      Berkeley the largest number of highly ranked graduate
+                      programs in the country. Of the 52 programs assessed, 48
+                      were within the top 10 range.<br /><br />
+
+                      Reflecting its public character and mission, Berkeley has
+                      long served highly qualified students regardless of means.
+                      The University educates more federal Pell Grant recipients
+                      from low-income families earning less than $45,000 than
+                      all eight Ivy League universities and Stanford University
+                      combined, and about one-quarter of Berkeley freshmen are
+                      the first in their families to attend college.<br /><br />
+
+                      The official language for all PhD courses is English. The
+                      fellowships are awarded for 4 years and their yearly
+                      amount is € 16.243,00 gross. All PhD students have free
+                      accommodation at the GSSI facilities and use of the
+                      canteen, plus benefits as listed in the call. The
+                      application must be submitted through the online form
+                      available at https://applications.gssi.it/phd/ by:
+                    </p>
+                  </div>
+                  <div class="company-load-more">
+                    <a
+                      class="company-btn"
+                      data-bs-toggle="collapse"
+                      href="#multiCollapseExample1"
+                      role="button"
+                      aria-expanded="false"
+                      aria-controls="multiCollapseExample1"
+                    >
+                      Read more
+                      <i class="fa fa-angle-down" aria-hidden="true"></i>
+                    </a>
+                  </div>
+                </div>
+                <div class="company__content__item mt-4">
+                  <h2 class="job-detail-heading">Job details</h2>
+                  <div class="job-detail-list">
+                    <div class="job-detail-item row">
+                      <div class="job-detail-item__title">
+                        <p>Title</p>
+                      </div>
+                      <div class="job-detail-item__text">
+                        <p>
+                          New Call for GSSI PhD Applications 2023/24 now open
+                        </p>
+                      </div>
+                    </div>
+                    <div class="job-detail-item row">
+                      <div class="job-detail-item__title">
+                        <p>Employer</p>
+                      </div>
+                      <div class="job-detail-item__text">
+                        <p>Gran Sasso Science Institute</p>
+                      </div>
+                    </div>
+                    <div class="job-detail-item row">
+                      <div class="job-detail-item__title">
+                        <p>Location</p>
+                      </div>
+                      <div class="job-detail-item__text">
+                        <p>viale Francesco Crispi, 7 L’Aquila, Italy</p>
+                      </div>
+                    </div>
+                    <div class="job-detail-item row">
+                      <div class="job-detail-item__title">
+                        <p>Published</p>
+                      </div>
+                      <div class="job-detail-item__text">
+                        <p>45009</p>
+                      </div>
+                    </div>
+                    <div class="job-detail-item row">
+                      <div class="job-detail-item__title">
+                        <p>Application deadline</p>
+                      </div>
+                      <div class="job-detail-item__text">
+                        <p>45076,99999</p>
+                      </div>
+                    </div>
+                    <div class="job-detail-item row">
+                      <div class="job-detail-item__title">
+                        <p>Job type</p>
+                      </div>
+                      <div class="job-detail-item__text">
+                        <p>PhD</p>
+                      </div>
+                    </div>
+                    <div class="job-detail-item row">
+                      <div class="job-detail-item__title">
+                        <p>Field</p>
+                      </div>
+                      <div class="job-detail-item__text">
+                        <p>
+                          Applied Mathematics, Particle Physics, Astrophysics,
+                          Economic Geography, Observational Astronomy and 21
+                          more
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="link-apply mt-4">
+                    <div class="row">
+                      <div class="col-lg-3 col-md-6 d-flex mb-3">
+                        <a class="button-apply"> Apply now </a>
+                      </div>
+                      <div class="col-lg-3 col-md-6 d-flex mb-3">
+                        <a class="button-o-apply">
+                          <embed class="me-1" src="./job-heart.svg" />
+                          Save as a favourite
+                        </a>
+                      </div>
+                      <div class="col-lg-3 col-md-6 d-flex mb-3">
+                        <a class="button-o-apply">
+                          <embed class="me-1" src="./job-notification.svg" />
+                          Create job alert
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4">
+            <div class="background-box-shadow">
+              <h2 class="job-detail-heading">About the employer</h2>
+              <div class="d-flex align-items-center mt-3">
+                <div class="job-company-logo me-2">
+                  <img class="w-100" alt="United States" src="./lg-uni.png" />
+                  <!-- <div>OK</div> -->
+                </div>
+                <div class="job-company-text ms-1">
+                  <a
+                    href=""
+                    target="_bank"
+                    class="job-company-name color-green"
+                  >
+                    Suny Science Institute
+                  </a>
+                </div>
+              </div>
+              <div class="job-detail-item border-0">
+                <p>
+                  The GSSI – Gran Sasso Science Institute is an international
+                  PhD school and a center for research and higher education in
+                  the areas of Physics, Math...
+                </p>
+              </div>
+              <div class="company-load-more mt-3">
+                <a href="" class="company-btn-outline">
+                  Visit the employer page
+                </a>
+              </div>
+            </div>
+
+            <div class="background-box-shadow mt-4">
+              <h2 class="job-detail-heading">Find similar jobs</h2>
+              <div>
+                <div class="company-load-more">
+                  <a
+                    href=""
+                    class="company-btn similar-link"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="top"
+                    title="PhD jobs in Italy PhD jobs in Italy PhD jobs in Italy"
+                  >
+                    PhD jobs in Italy PhD jobs in Italy PhD jobs in Italy
+                    <embed src="./job-arrow-right.svg" />
+                  </a>
+                </div>
+                <div class="company-load-more">
+                  <a
+                    href=""
+                    class="company-btn similar-link"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="top"
+                    title="PhD jobs in Italy PhD jobs in Italy PhD jobs in Italy"
+                  >
+                    PhD jobs in Italy PhD jobs in Italy PhD jobs in Italy
+                    <embed src="./job-arrow-right.svg" />
+                  </a>
+                </div>
+                <div class="company-load-more">
+                  <a
+                    href=""
+                    class="company-btn similar-link"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="top"
+                    title="PhD jobs in Italy PhD jobs in Italy PhD jobs in Italy"
+                  >
+                    PhD jobs in Italy PhD jobs in Italy PhD jobs in Italy
+                    <embed src="./job-arrow-right.svg" />
+                  </a>
+                </div>
+                <div class="company-load-more">
+                  <a
+                    href=""
+                    class="company-btn similar-link"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="top"
+                    title="PhD jobs in Italy PhD jobs in Italy PhD jobs in Italy"
+                  >
+                    PhD jobs in Italy PhD jobs in Italy PhD jobs in Italy
+                    <embed src="./job-arrow-right.svg" />
+                  </a>
+                </div>
+                <div class="company-load-more">
+                  <a
+                    href=""
+                    class="company-btn similar-link"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="top"
+                    title="PhD jobs in Italy PhD jobs in Italy PhD jobs in Italy"
+                  >
+                    PhD jobs in Italy PhD jobs in Italy PhD jobs in Italy
+                    <embed src="./job-arrow-right.svg" />
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="background-box-shadow mt-4 p-0">
+              <h2 class="job-detail-heading" style="padding: 24px">
+                This might interest you
+              </h2>
+              <div class="job-interest-list">
+                <div class="job-interest-item">
+                  <div class="job-interest-logo me-2">
+                    <img
+                      class="w-100"
+                      alt="United States"
+                      src="https://recruitment.allxone.vn/ustorage/upload/2023/04/16/00155d001403-11ed-dbc4-96c18c30-9f45_thumb_200.jpg"
+                    />
+                  </div>
+                  <div class="job-company-text ms-1">
+                    <a
+                      href=""
+                      target="_bank"
+                      class="job-company-name text-black"
+                    >
+                      6 Reasons to Work at 6G Flagship - The World’s First 6G
+                      Research Programme
+                    </a>
+                    <div>
+                      <p class="company-job-time">
+                        <embed class="me-1" src="./company-time-clock.svg" />
+                        <span>Closing in 27 days</span>
+                      </p>
+                      <p class="company-job-time">
+                        <embed
+                          class="me-1"
+                          src="./company-location-address.svg"
+                        />
+                        <span>United States</span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="job-interest-item">
+                  <div class="job-interest-logo me-2">
+                    <div>OK</div>
+                  </div>
+                  <div class="job-company-text ms-1">
+                    <a
+                      href=""
+                      target="_bank"
+                      class="job-company-name text-black"
+                    >
+                      6 Reasons to Work at 6G Flagship - The World’s First 6G
+                      Research Programme
+                    </a>
+                    <div>
+                      <p class="company-job-time">
+                        <embed class="me-1" src="./company-time-clock.svg" />
+                        <span>Closing in 27 days</span>
+                      </p>
+                      <p class="company-job-time">
+                        <embed
+                          class="me-1"
+                          src="./company-location-address.svg"
+                        />
+                        <span>United States</span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="job-interest-item">
+                  <div class="job-interest-logo me-2">
+                    <img
+                      class="w-100"
+                      alt="United States"
+                      src="https://recruitment.allxone.vn/ustorage/upload/2023/04/16/00155d001403-11ed-dbc4-96c18c30-9f45_thumb_200.jpg"
+                    />
+                  </div>
+                  <div class="job-company-text ms-1">
+                    <a
+                      href=""
+                      target="_bank"
+                      class="job-company-name text-black"
+                    >
+                      6 Reasons to Work at 6G Flagship - The World’s First 6G
+                      Research Programme
+                    </a>
+                    <div>
+                      <p class="company-job-time">
+                        <embed class="me-1" src="./company-time-clock.svg" />
+                        <span>Closing in 27 days</span>
+                      </p>
+                      <p class="company-job-time">
+                        <embed
+                          class="me-1"
+                          src="./company-location-address.svg"
+                        />
+                        <span>United States</span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="company-load-more" style="padding: 24px">
+                <a href="" class="company-btn-outline">
+                  More stories
+                  <embed class="ms-1" src="./job-arrow-right.svg" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="jobguru-footer-area mt-5">
+      <div class="footer-top section_50">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-5 col-md-6">
+              <div class="single-footer-widget">
+                <div class="footer-logo mb-2">
+                  <a href="">
+                    <img
+                      src="https://beta.resumegates.com/assets/client/img/logo_2-1.png"
+                    />
+                  </a>
+                </div>
+                <ul>
+                  <li class="m-0 mb-1 mt-3">
+                    <a class="text-gray" href="">
+                      <i class="fa fa-envelope me-2"></i
+                      >contact@brightergates.com</a
+                    >
+                  </li>
+                  <li class="m-0 mb-1">
+                    <span class="text-gray">
+                      <i class="fa fa-copyright me-2"></i>This website is a
+                      product by Brighter Gates AB</span
+                    >
+                  </li>
+                  <li class="m-0 mb-1">
+                    <span class="text-gray">
+                      <i class="fa fa-map-marker me-2"></i>Portlidervagen 2, 724
+                      80, Vasteras, Sweden</span
+                    >
+                  </li>
+                </ul>
+                <ul class="footer-social">
+                  <li>
+                    <a
+                      href="https://www.facebook.com/profile.php?id=100088828484452"
+                      class="fb me-1"
+                    >
+                      <img
+                        src="https://beta.resumegates.com/assets/client/img/Facebook.png"
+                      />
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.linkedin.com/company/resume-gates/"
+                      class="linkedin"
+                    >
+                      <img
+                        src="https://beta.resumegates.com/assets/client/img/linkedin.png"
+                      />
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-7 col-md-6">
+              <div class="row">
+                <div class="col-lg-4 col-md-6">
+                  <div class="single-footer-widget">
+                    <h3>Job Seeker</h3>
+                    <ul>
+                      <li>
+                        <a href="https://beta.resumegates.com/blogs">Blog</a>
+                      </li>
+                      <li>
+                        <a href="https://beta.resumegates.com/templates">
+                          Templates</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                  <div class="single-footer-widget">
+                    <h3>Employer</h3>
+                    <ul>
+                      <li>
+                        <a href="https://beta.resumegates.com/contact-us"
+                          >Post a job</a
+                        >
+                      </li>
+                      <li>
+                        <a href="https://beta.resumegates.com/content-marketing"
+                          >Content Marketing</a
+                        >
+                      </li>
+                      <li>
+                        <a href="https://beta.resumegates.com/contact-us"
+                          >Price</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                  <div class="single-footer-widget">
+                    <h3>Info</h3>
+                    <ul>
+                      <li>
+                        <a href="https://beta.resumegates.com/about-us"
+                          >About us</a
+                        >
+                      </li>
+                      <li>
+                        <a href="https://beta.resumegates.com/terms-conditions"
+                          >Terms &amp; Conditions</a
+                        >
+                      </li>
+                      <li>
+                        <a href="https://beta.resumegates.com/terms-conditions"
+                          >Privacy Policy</a
+                        >
+                      </li>
+                      <li>
+                        <a href="https://beta.resumegates.com/contact-us"
+                          >Contact us</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="copyright-left">
+                <p>
+                  This website is a product by Brighter Gates AB, Portlidervagen
+                  2, 724 80, Vasteras, Sweden.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./assets/js/jquery-3.0.0.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/clickmenu.js"></script>
+  </body>
+</html>

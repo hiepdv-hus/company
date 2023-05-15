@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/img/hp-logo4.png"
+    />
+    <!--Bootstrap css-->
+    <link rel="stylesheet" href="assets/css/bootstrap.css" />
+    <!--Font Awesome css-->
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css" />
+    <!--Slicknav css-->
+    <link rel="stylesheet" href="assets/css/slicknav.min.css" />
+    <!--Swiper css-->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+    <!--style css-->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/style-new.css" />
+  </head>
+
+  <body>
+    <header class="jobguru-header-area stick-top forsticky header-fixed-top">
+      <div class="menu-animation">
+        <div id="body-background" style="height: 0px"></div>
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-3 menuRight">
+              <div class="site-logo">
+                <a href="https://beta.resumegates.com">
+                  <img
+                    src="https://beta.resumegates.com/assets/client/img/logo.png"
+                    alt="jobguru"
+                    class="non-stick-logo"
+                  />
+                  <img
+                    src="https://beta.resumegates.com/assets/client/img/logo.png"
+                    alt="jobguru"
+                    class="stick-logo"
+                  />
+                </a>
+              </div>
+              <div>
+                <span onclick="openNav()" class="navIcon">
+                  <i class="fa fa-bars pt-1" aria-hidden="true"></i>
+                </span>
+              </div>
+            </div>
+            <div class="col-lg-9">
+              <nav
+                class="header-menu sidenav"
+                id="mySidenav"
+                style="width: 100%"
+              >
+                <a
+                  href="javascript:void(0)"
+                  class="closebtn navIcon"
+                  onclick="closeNav()"
+                  >×</a
+                >
+                <nav id="navigation">
+                  <ul id="jobguru_navigation">
+                    <div class="row align-items-center">
+                      <div class="col-lg-7">
+                        <ul>
+                          <li class="active has-children">
+                            <a
+                              class=""
+                              href="https://beta.resumegates.com/cvs/list"
+                              >My Resume</a
+                            >
+                          </li>
+                          <li class="has-children">
+                            <a
+                              class=""
+                              href="https://beta.resumegates.com/templates"
+                              >Templates</a
+                            >
+                          </li>
+                          <li class="has-children">
+                            <a
+                              class=""
+                              href="https://beta.resumegates.com/company"
+                              >Company</a
+                            >
+                          </li>
+                          <li class="has-children">
+                            <a
+                              class=""
+                              href="https://beta.resumegates.com/blogs"
+                              >Blog</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="col-lg-5">
+                        <div class="header-right-menu">
+                          <ul>
+                            <li class="has-children">
+                              <a
+                                href="https://beta.resumegates.com/login"
+                                class="signIn-btn"
+                                >Sign In</a
+                              >
+                            </li>
+                            <li class="has-children">
+                              <a
+                                href="https://beta.resumegates.com/register"
+                                class="signUp-btn"
+                                >Sign Up</a
+                              >
+                            </li>
+                            <li class="has-children">
+                              <button
+                                class="swiper-button-empty"
+                                data-bs-toggle="dropdown"
+                                type="button"
+                                id="dropdownMenuButton"
+                                aria-haspopup="true"
+                                aria-expanded="true"
+                              >
+                                <img
+                                  src="https://flagcdn.com/w20/gb.png"
+                                  srcset="https://flagcdn.com/w20/gb.png 2x"
+                                  width="20"
+                                  alt="en"
+                                />
+                              </button>
+                              <div
+                                class="dropdown-menu dropdown-style"
+                                aria-labelledby="dropdownMenuButton"
+                              >
+                                <a
+                                  class="dropdown-item"
+                                  href="https://beta.resumegates.com/locale/vi"
+                                  ><img
+                                    src="https://flagcdn.com/w20/vn.png"
+                                    srcset="https://flagcdn.com/w40/vn.png 2x"
+                                    width="20"
+                                    alt="Vietnam"
+                                  />
+                                  Tiếng Việt</a
+                                >
+                                <a
+                                  class="dropdown-item"
+                                  href="https://beta.resumegates.com/locale/en"
+                                  ><img
+                                    src="https://flagcdn.com/w20/gb.png"
+                                    srcset="https://flagcdn.com/w40/gb.png 2x"
+                                    width="20"
+                                    alt="United Kingdom"
+                                  />
+                                  English</a
+                                >
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </ul>
+                </nav>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="company">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-8">
+            <div class="company__title">
+              <h1>
+                Lorem ipsum dolor sit amet consectetur. Feugiat semper vitae
+                neque ultricies.
+              </h1>
+              <div class="company__info">
+                <div class="window">
+                  <img src="./window.svg" />
+                  <!-- <div>OK</div> -->
+                </div>
+                <div class="phone">
+                  <div class="">
+                    <div class="d-flex">
+                      <embed class="me-2" src="./company-phone.svg" />
+                      <p class="phone-title">Phone</p>
+                    </div>
+                    <p class="phone-content">+1 510-642-6000</p>
+                  </div>
+                  <div class="mt-3">
+                    <div class="d-flex">
+                      <embed class="me-2" src="./company-website.svg" />
+                      <p class="phone-title">Website</p>
+                    </div>
+                    <p class="phone-content">https://www.berkeley.edu</p>
+                  </div>
+                </div>
+                <div class="phone">
+                  <div class="">
+                    <div class="d-flex">
+                      <embed class="me-2" src="./company-country.svg" />
+                      <p class="phone-title">Country</p>
+                    </div>
+                    <p class="phone-content">United States</p>
+                  </div>
+                  <div class="mt-3">
+                    <div class="d-flex">
+                      <embed class="me-2" src="./company-address.svg" />
+                      <p class="phone-title">Address</p>
+                    </div>
+                    <p class="phone-content">2200 Bancroft Way Berkeley, CA</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="company__content">
+              <div class="company__content__item mt-4">
+                <h2>
+                  About
+                  <span style="color: #26bc51">
+                    University of California, Berkeley
+                  </span>
+                </h2>
+                <p class="mt-2">
+                  Founded in 1868, the University of California, Berkeley is one
+                  of the world’s preeminent public universities, boasting a
+                  distinguished faculty (with 22 Nobel laureates to date),
+                  stellar research libraries, and more than 350 academic
+                  programs. At the heart of Berkeley’s excellence are its 1,582
+                  full-time faculty members, dispersed among 130 academic units
+                  and 80 interdisciplinary research units.<br /><br />
+
+                  Berkeley is home to more than 25,000 undergraduates and more
+                  than 10,000 graduate students — and produces more PhDs
+                  annually than any other American university. It ranks at or
+                  near the top in fields ranging from engineering and the core
+                  sciences to the social sciences, arts, and humanities. In
+                  2010, the National Research Council awarded Berkeley the
+                  largest number of highly ranked graduate programs in the
+                  country. Of the 52 programs assessed, 48 were within the top
+                  10 range.<br /><br />
+
+                  Reflecting its public character and mission, Berkeley has long
+                  served highly qualified students regardless of means. The
+                  University educates more federal Pell Grant recipients from
+                  low-income families earning less than $45,000 than all eight
+                  Ivy League universities and Stanford University combined, and
+                  about one-quarter of Berkeley freshmen are the first in their
+                  families to attend college.
+                </p>
+              </div>
+              <div class="company__content__item mt-4">
+                <h2>Latest Jobs</h2>
+                <div class="company-job">
+                  <a href="">
+                    <h4>Executive Director - Armenian Studies Program</h4>
+                    <div class="d-flex">
+                      <p class="company-job-time">
+                        <embed class="me-1" src="./company-time-clock.svg" />
+                        <span>Closing in 27 days</span>
+                      </p>
+                      <p class="company-job-time">
+                        <embed
+                          class="me-1"
+                          src="./company-location-address.svg"
+                        />
+                        <span>United States</span>
+                      </p>
+                    </div>
+                  </a>
+                </div>
+                <div class="company-job">
+                  <a href="">
+                    <h4>Executive Director - Armenian Studies Program</h4>
+                    <div class="d-flex">
+                      <p class="company-job-time">
+                        <embed class="me-1" src="./company-time-clock.svg" />
+                        <span>Closing in 27 days</span>
+                      </p>
+                      <p class="company-job-time">
+                        <embed
+                          class="me-1"
+                          src="./company-location-address.svg"
+                        />
+                        <span>United States</span>
+                      </p>
+                    </div>
+                  </a>
+                </div>
+                <div class="company-job">
+                  <a href="">
+                    <h4>Executive Director - Armenian Studies Program</h4>
+                    <div class="d-flex">
+                      <p class="company-job-time">
+                        <embed class="me-1" src="./company-time-clock.svg" />
+                        <span>Closing in 27 days</span>
+                      </p>
+                      <p class="company-job-time">
+                        <embed
+                          class="me-1"
+                          src="./company-location-address.svg"
+                        />
+                        <span>United States</span>
+                      </p>
+                    </div>
+                  </a>
+                </div>
+                <div class="company-job">
+                  <a href="">
+                    <h4>Executive Director - Armenian Studies Program</h4>
+                    <div class="d-flex">
+                      <p class="company-job-time">
+                        <embed class="me-1" src="./company-time-clock.svg" />
+                        <span>Closing in 27 days</span>
+                      </p>
+                      <p class="company-job-time">
+                        <embed
+                          class="me-1"
+                          src="./company-location-address.svg"
+                        />
+                        <span>United States</span>
+                      </p>
+                    </div>
+                  </a>
+                </div>
+                <div class="company-job">
+                  <a href="">
+                    <h4>Executive Director - Armenian Studies Program</h4>
+                    <div class="d-flex">
+                      <p class="company-job-time">
+                        <embed class="me-1" src="./company-time-clock.svg" />
+                        <span>Closing in 27 days</span>
+                      </p>
+                      <p class="company-job-time">
+                        <embed
+                          class="me-1"
+                          src="./company-location-address.svg"
+                        />
+                        <span>United States</span>
+                      </p>
+                    </div>
+                  </a>
+                </div>
+                <div class="company-job">
+                  <a href="">
+                    <h4>Executive Director - Armenian Studies Program</h4>
+                    <div class="d-flex">
+                      <p class="company-job-time">
+                        <embed class="me-1" src="./company-time-clock.svg" />
+                        <span>Closing in 27 days</span>
+                      </p>
+                      <p class="company-job-time">
+                        <embed
+                          class="me-1"
+                          src="./company-location-address.svg"
+                        />
+                        <span>United States</span>
+                      </p>
+                    </div>
+                  </a>
+                </div>
+                <div class="company-job">
+                  <a href="">
+                    <h4>Executive Director - Armenian Studies Program</h4>
+                    <div class="d-flex">
+                      <p class="company-job-time">
+                        <embed class="me-1" src="./company-time-clock.svg" />
+                        <span>Closing in 27 days</span>
+                      </p>
+                      <p class="company-job-time">
+                        <embed
+                          class="me-1"
+                          src="./company-location-address.svg"
+                        />
+                        <span>United States</span>
+                      </p>
+                    </div>
+                  </a>
+                </div>
+                <div class="company-load-more">
+                  <a href="" class="company-btn">
+                    More jobs
+                    <i class="fa fa-angle-down" aria-hidden="true"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="company__content__item mt-4">
+                <h2 class="mb-3">More comapany</h2>
+                <div class="row feature-category feature-customers">
+                  <div class="col-md-12">
+                    <div class="swiper mySwiper">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                          <div class="shadow-min2">
+                            <div class="pt-7">
+                              <div class="job-item">
+                                <div
+                                  class="job-item__title d-flex align-items-center"
+                                >
+                                  <div class="job-company-logo me-2">
+                                    <img
+                                      loading="lazy"
+                                      class="w-100"
+                                      alt="United States"
+                                      src="https://api.roboexpress.net/api/fileupload/show/10/35/logo/1656693227O35GlvrClJ.png"
+                                    />
+                                  </div>
+                                  <div class="job-company-text ms-1">
+                                    <a
+                                      href=""
+                                      target="_bank"
+                                      class="text-decoration-off job-company-name"
+                                    >
+                                      Lorem ipsum dolor sit amet consectetur.
+                                      Feugiat semper vitae neque ultricies.
+                                    </a>
+                                  </div>
+                                </div>
+                                <div class="job-item__content">
+                                  <div class="d-flex">
+                                    <p class="company-job-location">
+                                      <embed
+                                        class="me-1"
+                                        src="./company-location.svg"
+                                      />
+                                      <span>United States</span>
+                                    </p>
+                                    <p class="company-job-location">
+                                      <embed
+                                        class="me-1"
+                                        src="./company-briefcase.svg"
+                                      />
+                                      <span>10 open position</span>
+                                    </p>
+                                  </div>
+                                  <a class="" href="" target="_bank">
+                                    <p class="job-short cut-text--6-line">
+                                      Lorem ipsum dolor sit amet consectetur.
+                                      Facilisis ut pellentesque tincidunt varius
+                                      quis diam dictum id. Vitae ut semper quis
+                                      eros dui tortor tincidunt senectus leo.
+                                    </p>
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="shadow-min2">
+                            <div class="pt-7">
+                              <div class="job-item">
+                                <div
+                                  class="job-item__title d-flex align-items-center"
+                                >
+                                  <div class="job-company-logo me-2">
+                                    <div style="display: block">OK</div>
+                                  </div>
+                                  <div class="job-company-text ms-1">
+                                    <a
+                                      href=""
+                                      target="_bank"
+                                      class="text-decoration-off job-company-name"
+                                    >
+                                      Lorem ipsum dolor sit amet consectetur.
+                                      Feugiat semper vitae neque ultricies.
+                                    </a>
+                                  </div>
+                                </div>
+                                <div class="job-item__content">
+                                  <div class="d-flex">
+                                    <p class="company-job-location">
+                                      <embed
+                                        class="me-1"
+                                        src="./company-location.svg"
+                                      />
+                                      <span>United States</span>
+                                    </p>
+                                    <p class="company-job-location">
+                                      <embed
+                                        class="me-1"
+                                        src="./company-briefcase.svg"
+                                      />
+                                      <span>10 open position</span>
+                                    </p>
+                                  </div>
+                                  <a class="" href="" target="_bank">
+                                    <p class="job-short cut-text--6-line">
+                                      Lorem ipsum dolor sit amet consectetur.
+                                      Facilisis ut pellentesque tincidunt varius
+                                      quis diam dictum id. Vitae ut semper quis
+                                      eros dui tortor tincidunt senectus leo.
+                                    </p>
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-pagination"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4">
+            <div class="company-banner">
+              <p class="company-banner__headding">
+                Banner<br />
+                Advertising
+              </p>
+              <img
+                class="company-img-detail"
+                src="./company-banner.svg"
+                width="100%"
+              />
+            </div>
+            <h2 class="mt-5">Recent blogs</h2>
+            <div class="company-blog">
+              <div class="single-blog card mt-4 company-blog-item">
+                <div class="job-item">
+                  <div class="">
+                    <img width="100%" src="./company-images-1.png" alt="ABB" />
+                  </div>
+                  <div class="p-3">
+                    <a class="job-item-title news-item-title" href="">
+                      <h4 class="text-dark">
+                        Lorem ipsum dolor sit amet consectetur. Elit
+                        ullamcorper.
+                      </h4>
+                      <p class="job-short mt-3 color-gray">
+                        Review your whole team's salaries and pay everyone in
+                        their local currency with a click. Just make one bulk
+                        payment to Deel ...
+                      </p>
+                    </a>
+                  </div>
+                </div>
+                <div class="item-footer-date mt-auto p-3 pt-0">
+                  <div class="d-flex align-items-center">
+                    <div>
+                      <a class="color-gray" href="">
+                        <i class="fa fa-user-o me-2" aria-hidden="true"></i>Near
+                      </a>
+                    </div>
+                    <div class="ms-auto">
+                      <p class="color-gray mr-2 mb-0">
+                        <i class="fa fa-clock-o me-2"></i>Oct 4, 2021
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="single-blog card mt-4 company-blog-item">
+                <div class="job-item">
+                  <div class="">
+                    <img width="100%" src="./company-images-2.png" alt="ABB" />
+                  </div>
+                  <div class="p-3">
+                    <a class="job-item-title news-item-title" href="">
+                      <h4 class="text-dark">
+                        Lorem ipsum dolor sit amet consectetur. Elit
+                        ullamcorper.
+                      </h4>
+                      <p class="job-short mt-3 color-gray">
+                        Review your whole team's salaries and pay everyone in
+                        their local currency with a click. Just make one bulk
+                        payment to Deel ...
+                      </p>
+                    </a>
+                  </div>
+                </div>
+                <div class="item-footer-date mt-auto p-3 pt-0">
+                  <div class="d-flex align-items-center">
+                    <div>
+                      <a class="color-gray" href="">
+                        <i class="fa fa-user-o me-2" aria-hidden="true"></i>Near
+                      </a>
+                    </div>
+                    <div class="ms-auto">
+                      <p class="color-gray mr-2 mb-0">
+                        <i class="fa fa-clock-o me-2"></i>Oct 4, 2021
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="single-blog card mt-4 company-blog-item">
+                <div class="job-item">
+                  <div class="">
+                    <img width="100%" src="./company-images-3.png" alt="ABB" />
+                  </div>
+                  <div class="p-3">
+                    <a class="job-item-title news-item-title" href="">
+                      <h4 class="text-dark">
+                        Lorem ipsum dolor sit amet consectetur. Elit
+                        ullamcorper.
+                      </h4>
+                      <p class="job-short mt-3 color-gray">
+                        Review your whole team's salaries and pay everyone in
+                        their local currency with a click. Just make one bulk
+                        payment to Deel ...
+                      </p>
+                    </a>
+                  </div>
+                </div>
+                <div class="item-footer-date mt-auto p-3 pt-0">
+                  <div class="d-flex align-items-center">
+                    <div>
+                      <a class="color-gray" href="">
+                        <i class="fa fa-user-o me-2" aria-hidden="true"></i>Near
+                      </a>
+                    </div>
+                    <div class="ms-auto">
+                      <p class="color-gray mr-2 mb-0">
+                        <i class="fa fa-clock-o me-2"></i>Oct 4, 2021
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="company-load-more mt-4">
+                <a href="" class="company-btn-outline">
+                  More blogs
+                  <i class="fa fa-angle-right" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="jobguru-footer-area mt-5">
+      <div class="footer-top section_50">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-5 col-md-6">
+              <div class="single-footer-widget">
+                <div class="footer-logo mb-2">
+                  <a href="">
+                    <img
+                      src="https://beta.resumegates.com/assets/client/img/logo_2-1.png"
+                    />
+                  </a>
+                </div>
+                <ul>
+                  <li class="m-0 mb-1 mt-3">
+                    <a class="text-gray" href="">
+                      <i class="fa fa-envelope me-2"></i
+                      >contact@brightergates.com</a
+                    >
+                  </li>
+                  <li class="m-0 mb-1">
+                    <span class="text-gray">
+                      <i class="fa fa-copyright me-2"></i>This website is a
+                      product by Brighter Gates AB</span
+                    >
+                  </li>
+                  <li class="m-0 mb-1">
+                    <span class="text-gray">
+                      <i class="fa fa-map-marker me-2"></i>Portlidervagen 2, 724
+                      80, Vasteras, Sweden</span
+                    >
+                  </li>
+                </ul>
+                <ul class="footer-social">
+                  <li>
+                    <a
+                      href="https://www.facebook.com/profile.php?id=100088828484452"
+                      class="fb me-1"
+                    >
+                      <img
+                        src="https://beta.resumegates.com/assets/client/img/Facebook.png"
+                      />
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.linkedin.com/company/resume-gates/"
+                      class="linkedin"
+                    >
+                      <img
+                        src="https://beta.resumegates.com/assets/client/img/linkedin.png"
+                      />
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-7 col-md-6">
+              <div class="row">
+                <div class="col-lg-4 col-md-6">
+                  <div class="single-footer-widget">
+                    <h3>Job Seeker</h3>
+                    <ul>
+                      <li>
+                        <a href="https://beta.resumegates.com/blogs">Blog</a>
+                      </li>
+                      <li>
+                        <a href="https://beta.resumegates.com/templates">
+                          Templates</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                  <div class="single-footer-widget">
+                    <h3>Employer</h3>
+                    <ul>
+                      <li>
+                        <a href="https://beta.resumegates.com/contact-us"
+                          >Post a job</a
+                        >
+                      </li>
+                      <li>
+                        <a href="https://beta.resumegates.com/content-marketing"
+                          >Content Marketing</a
+                        >
+                      </li>
+                      <li>
+                        <a href="https://beta.resumegates.com/contact-us"
+                          >Price</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                  <div class="single-footer-widget">
+                    <h3>Info</h3>
+                    <ul>
+                      <li>
+                        <a href="https://beta.resumegates.com/about-us"
+                          >About us</a
+                        >
+                      </li>
+                      <li>
+                        <a href="https://beta.resumegates.com/terms-conditions"
+                          >Terms &amp; Conditions</a
+                        >
+                      </li>
+                      <li>
+                        <a href="https://beta.resumegates.com/terms-conditions"
+                          >Privacy Policy</a
+                        >
+                      </li>
+                      <li>
+                        <a href="https://beta.resumegates.com/contact-us"
+                          >Contact us</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="copyright-left">
+                <p>
+                  This website is a product by Brighter Gates AB, Portlidervagen
+                  2, 724 80, Vasteras, Sweden.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        loop: true,
+        slidesPerView: 1,
+        spaceBetween: 10,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        autoplay: {
+          delay: 2000,
+        },
+        breakpoints: {
+          "@0.00": {
+            slidesPerView: 1,
+            spaceBetween: 10,
+          },
+          "@0.5": {
+            slidesPerView: 1,
+            spaceBetween: 20,
+          },
+          "@1.00": {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          "@1.50": {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+        },
+      });
+    </script>
+  </body>
+</html>

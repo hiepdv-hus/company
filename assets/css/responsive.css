@@ -1,0 +1,349 @@
+
+
+
+/*================================================
+Responsive
+==================================================*/
+
+@media screen and (min-width: 1400px) {
+    .container {
+      max-width: 1320px;
+    }
+  }
+
+  @media (min-width: 992px) and (max-width: 1169px) {
+    .header-right-menu ul li a,
+    .header-menu ul li a {
+      padding: 5px !important;
+    }
+    .banner-welcome form .video-banner-input {
+      width: 40%;
+    }
+    .top-job-company-image h3,
+    .single-browse-company h3 {
+      font-size: 16px;
+    }
+  }
+
+  @media screen and (max-width: 992px) {
+    #body-background {
+      background-color: rgba(0, 0, 0, 0.9);
+      position: fixed;
+      width: 100%;
+      z-index: 2000;
+      margin-top: -10px;
+    }
+    .navIcon {
+      display: block;
+    }
+    .jobguru-header-area {
+        padding: 0;
+        padding-bottom: 10px;
+    }
+    .profile-menu {
+        margin: auto;
+    }
+    .banner-imgCV {
+      width: 70%;
+    }
+    .menuRight {
+      display: flex;
+      justify-items: center;
+    }
+    .jobguru-banner-area {
+      padding-bottom: 50px;
+    }
+    .menuRight span {
+      font-size: 30px;
+      cursor: pointer;
+      color: var(--bs-primary);
+      display: none;
+    }
+    a.signUp-btn {
+      color: #fff !important;
+  }
+    header.jobguru-header-area.stick-top.forsticky.sticky .menuRight span {
+      color: var(--bs-primary)
+    }
+    header .signUp-btn {
+      border-radius: 0;
+      margin-left: 0;
+    }
+    .sidenav {
+      height: 100%;
+      width: 0;
+      position: fixed;
+      z-index: 2001;
+      top: 0;
+      right: 0;
+      background-color: #fff;
+      overflow-x: hidden;
+      transition: 0.5s;
+      padding-top: 60px;
+    }
+    .blogRight .tab-content li {
+      margin-bottom: 1.5rem !important;
+    }
+    .sidenav a {
+      text-decoration: none;
+      line-height: 24px;
+      padding: 10px 20px;
+      font-size: 15px;
+      text-transform: capitalize;
+      color: #4a6375;
+      display: block;
+      transition: 0.3s;
+    }
+
+    .sidenav a:hover {
+      background-color: var(--bs-primary);
+      color: #fff;
+    }
+
+    .sidenav .closebtn {
+      position: absolute;
+      top: 5px;
+      right: 0;
+      font-size: 36px;
+      margin-left: 50px;
+      transition: 0.5s;
+    }
+    .sidenav ul li {
+      display: block;
+    }
+    .sidenav .jobguru-btn {
+      border-radius: 0;
+    }
+    .sidenav ul li a {
+      padding: 10px 30px !important;
+    }
+    .ourBlog {
+      margin-top: 1.5rem;
+    }
+  }
+
+  @media screen and (max-height: 450px) {
+    .sidenav {
+      padding-top: 15px;
+    }
+    .sidenav a {
+      font-size: 18px;
+    }
+  }
+  @media (min-width: 768px) and (max-width: 991px) {
+    .menu-animation {
+      padding-top: .5rem;
+    }
+    .jobguru-header-area.stick-top.sticky .header-right-menu ul li a,
+  .jobguru-header-area.stick-top.sticky .header-menu ul li a {
+    color: #4a6375;
+  }
+
+  .jobguru-header-area.stick-top.sticky .header-menu ul li a:after {
+    color: #4a6375;
+  }
+    .menuRight span {
+      display: block;
+    }
+    .jobguru-responsive-menu {
+      display: block;
+      width: 50%;
+      z-index: 99999;
+    }
+    .site-logo {
+      width: 100%;
+      margin: 0;
+      padding: 0;
+    }
+    .banner-text {
+      top: 20%;
+    }
+    .jobguru-video-area {
+      padding-top: 70px;
+    }
+    .header-right-menu ul li a {
+      color: #000;
+      text-align: center;
+    }
+    .header-right-menu ul li {
+      display: block;
+    }
+    .header-right-menu .jobguru-btn {
+      border: 0;
+    }
+    .slicknav_nav ul {
+      margin: 0 10px;
+    }
+    .slicknav_nav,
+    .slicknav_nav ul {
+      overflow: inherit;
+    }
+    .slicknav_nav .slicknav_arrow {
+      display: none;
+    }
+    .slicknav_nav li {
+      border-bottom: 0;
+    }
+    .has-children__down:after {
+      color: #000;
+    }
+    .banner-img {
+      display: none;
+    }
+    .searchApp {
+      text-align: center;
+      margin-top: 2rem;
+    }
+  }
+
+  @media (max-width: 767px) {
+    .company-list-details {
+      margin: 1.5rem 0;
+    }
+    .searchApp {
+      text-align: center;
+    }
+    .job-content {
+      display: block;
+    }
+    .banner-imgCV {
+      width: 100%;
+    }
+    .banner-img {
+      display: none;
+    }
+    .menuRight span {
+      display: block;
+      padding-top: .5rem;
+    }
+    .jobguru-responsive-menu {
+      display: block;
+    }
+    .menuRight {
+      justify-content: space-between;
+    }
+    .jobguru-header-area.stick-top.sticky .slicknav_menu .slicknav_icon-bar,
+    .jobguru-header-area.home-3-page .slicknav_menu .slicknav_icon-bar {
+      background-color: rgb(0 174 244);
+    }
+    #nav1 {
+      display: flex;
+      padding: 0 1rem;
+    }
+    header ul li a {
+      color: #000000 !important;
+    }
+    .banner-text {
+      top: 25%;
+    }
+    .single-footer-widget {
+      margin: 30px 0;
+    }
+    .jobguru-video-area {
+      padding-top: 70px;
+    }
+    .jobguru-header-area {
+      padding: 0;
+    }
+    .jobguru-header-area .container-fluid {
+      padding: 0;
+    }
+    .banner-search h2 {
+      font-size: 40px;
+    }
+    .banner-search h4 {
+      font-family: "Raleway", sans-serif;
+      font-size: 18px;
+      color: var(--bs-primary);
+      font-weight: 500;
+    }
+    .site-logo img {
+      width: 6rem;
+      margin-top: 12px
+    }
+    .slicknav_nav {
+      position: absolute;
+      background: #fff;
+      border-top: 0;
+      box-shadow: none;
+      width: 100%;
+      top: 64px;
+      margin-left: -5px;
+      box-shadow: 0px 10px 10px 0px rgb(0 0 0 / 5%);
+    }
+    .slicknav_nav li {
+      border-bottom: 0;
+    }
+    .header-right-menu ul li a {
+      color: #000;
+      text-align: center;
+    }
+    .header-right-menu ul li {
+      display: block;
+    }
+    .header-right-menu .jobguru-btn {
+      border: 0;
+    }
+    .slicknav_nav ul {
+      margin: 0 10px;
+    }
+    .slicknav_nav a {
+      text-align: left;
+    }
+    .slicknav_nav .slicknav_row,
+    .slicknav_nav a {
+      margin: 0;
+    }
+    .slicknav_nav,
+    .slicknav_nav ul {
+      overflow: inherit;
+    }
+    .slicknav_nav .slicknav_arrow {
+      display: none;
+    }
+    .has-children__down:after {
+      color: #000;
+    }
+    .slicknav_menu .slicknav_icon-bar {
+      background-color: rgb(0 174 244);
+    }
+  }
+
+  @media only screen and (min-width: 480px) and (max-width: 767px) {
+    .jobguru-responsive-menu {
+      display: block;
+    }
+    .jobguru-video-area {
+      height: 500px;
+    }
+  }
+
+  @media only screen and (max-width: 480px) {
+    .jobguru-video-area {
+      height: 500px;
+    }
+    .featured_company .top-company-list {
+      display: block;
+      text-align: center;
+    }
+    .featured_company .top-company-list .company-list-details > h3 {
+      line-height: 30px;
+    }
+    .featured_company .company-list-details p,
+    a {
+      display: block;
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+    .featured_company .top-company-list .company-list-logo {
+      width: 100%;
+      background: #ffff;
+      margin-bottom: 10px;
+    }
+    header.header-static-top {
+      display: none;
+    }
+    header.header-fixed-top {
+      display: block;
+    }
+  }
