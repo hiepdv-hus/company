@@ -49,6 +49,9 @@ function createDropdown(containerId, selectedName) {
   // Handle search input
   searchInput.addEventListener("input", function () {
     const searchTerm = searchInput.value.toLowerCase();
+    if(searchTerm.trim() == '') {
+      console.log('ok');
+    }
 
     optionList.forEach((option) => {
       const optionText = option.textContent.toLowerCase();
@@ -120,16 +123,16 @@ const dropdown3 = createDropdown("dropdown3", "Country");
 // const dropdown9 = createDropdown("dropdown9", "Country");
 
 // SlidingText
-function addSlide() {
-  // Lấy tất cả các phần tử .options-item
-const optionsItems = document.querySelectorAll('.options-item');
+// function addSlide() {
+//   // Lấy tất cả các phần tử .options-item
+//   const optionsItems = document.querySelectorAll('.options-item');
 
-// Lặp qua từng phần tử và kiểm tra độ dài của văn bản trong span
-optionsItems.forEach((optionsItem) => {
-  const textSpan = optionsItem.querySelector('span');
-  if (textSpan.textContent.length > 18) {
-    optionsItem.classList.add('slide-animation');
-  }
-});
-}
-addSlide()
+//   // Lặp qua từng phần tử và kiểm tra độ dài của văn bản trong span
+//   optionsItems.forEach((optionsItem) => {
+//     const textSpan = optionsItem.querySelector('span');
+//     if (textSpan.textContent.length > 18) {
+//       optionsItem.classList.add('slide-animation');
+//     }
+//   });
+// }
+// addSlide()
